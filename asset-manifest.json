@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/to-do-app-prod/static/css/main.d51356ab.css",
+    "main.js": "/to-do-app-prod/static/js/main.f06508a2.js",
+    "static/js/787.5e141d9e.chunk.js": "/to-do-app-prod/static/js/787.5e141d9e.chunk.js",
+    "static/media/bg-desktop-light.jpg": "/to-do-app-prod/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "static/media/bg-desktop-dark.jpg": "/to-do-app-prod/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
+    "index.html": "/to-do-app-prod/index.html",
+    "static/media/icon-sun.svg": "/to-do-app-prod/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
+    "static/media/icon-moon.svg": "/to-do-app-prod/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
+    "static/media/icon-cross.svg": "/to-do-app-prod/static/media/icon-cross.6ee81d30b75cab19d6f7314624fcc4d6.svg",
+    "static/media/icon-check.svg": "/to-do-app-prod/static/media/icon-check.a8fb15d0278c8e312df5.svg",
+    "main.d51356ab.css.map": "/to-do-app-prod/static/css/main.d51356ab.css.map",
+    "main.f06508a2.js.map": "/to-do-app-prod/static/js/main.f06508a2.js.map",
+    "787.5e141d9e.chunk.js.map": "/to-do-app-prod/static/js/787.5e141d9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d51356ab.css",
+    "static/js/main.f06508a2.js"
+  ]
+}
