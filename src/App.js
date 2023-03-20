@@ -4,17 +4,24 @@ import "./mode.css";
 import addItemButton from "./images/icon-cross.svg";
 import toggleButtonDarkIcon from "./images/icon-sun.svg";
 import toggleButtonLightIcon from "./images/icon-moon.svg";
-
+const sampleData = [
+  { name: "Complete online Javascript Course", isActive: false },
+  { name: "Jog around the park 3x", isActive: true },
+  { name: "10 minutes meditation", isActive: true },
+  { name: "Read for 1 hour", isActive: true },
+  { name: "Pick up groceries", isActive: true },
+  { name: "Complete Todo App on Frontend Mentor", isActive: true },
+];
 const App = () => {
   const dragActivity = useRef();
   const dragOverActivity = useRef();
   const [activityList, setActivityList] = useState(() => {
-    const storedActivityList = JSON.parse(localStorage.getItem("activityList"));
-    return storedActivityList || [];
+    const storedActivityList = JSON.parse(localStorage.getItem("todo-list"));
+    return storedActivityList || sampleData;
   });
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [newActivity, setNewActivity] = useState({
-    name: "test",
+    name: "Create a new todo...",
     isActive: true,
   });
   const toggleTheme = () => {
@@ -66,7 +73,7 @@ const App = () => {
 
   useEffect(() => {
     document.body.className = theme;
-    localStorage.setItem("activityList", JSON.stringify(activityList));
+    localStorage.setItem("todo-list", JSON.stringify(activityList));
   }, [theme, activityList]);
 
   const dragActivityStart = (e, position) => {
@@ -92,7 +99,7 @@ const App = () => {
 
   return (
     <>
-      <div clasName={`${theme}`}>
+      <div className={`${theme}`}>
         <div className={`app-container`}>
           <header className="app-header">
             <h1 className="todo-heading">TODO</h1>
@@ -106,7 +113,7 @@ const App = () => {
               </button>
             )}
           </header>
-          <body>
+          <main>
             <div className={`new-activity-${theme}`}>
               <div className={`empty-check-${theme}`}>
                 <div className={`empty-check-circle-${theme}`}></div>
@@ -123,7 +130,7 @@ const App = () => {
                   className="add-activity-button"
                   onClick={handleAddActivity}
                 >
-                  <img src={addItemButton} />
+                  <img src={addItemButton} alt="add new activity" />
                 </div>
               )}
             </div>
@@ -234,22 +241,22 @@ const App = () => {
               </button>
               <div className="center-crud-buttons">
                 <button onClick={() => setShowActivities("All")}>
-                  <div
+                  <span
                     className={
                       showActivities === "All" ? "button-selected" : ""
                     }
                   >
                     All
-                  </div>
+                  </span>
                 </button>
                 <button onClick={() => setShowActivities("Active")}>
-                  <div
+                  <span
                     className={
                       showActivities === "Active" ? "button-selected" : ""
                     }
                   >
                     Active
-                  </div>
+                  </span>
                 </button>
                 <button onClick={() => setShowActivities("Completed")}>
                   <div
@@ -273,7 +280,7 @@ const App = () => {
             <p className={`${theme}-paragraph`}>
               Drag and drop to reorder list
             </p>
-          </body>
+          </main>
         </div>
       </div>
     </>
