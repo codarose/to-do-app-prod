@@ -38,7 +38,7 @@ button {
 .light {
   background-image: url("images/bg-desktop-dark.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: auto auto;
   background-position-x: center;
   background-position-y: -8px;
   background-color: black;
