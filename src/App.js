@@ -110,6 +110,7 @@ const App = () => {
             )}
           </header>
           <main>
+          
             <div className={`new-activity-${theme}`}>
               <div className={`empty-check-${theme}`}>
                 <div className={`empty-check-circle-${theme}`}></div>
