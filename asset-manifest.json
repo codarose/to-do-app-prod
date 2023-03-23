@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/to-do-app-prod/static/css/main.88121894.css",
-    "main.js": "/to-do-app-prod/static/js/main.a138570e.js",
+    "main.js": "/to-do-app-prod/static/js/main.da5c79f5.js",
     "static/js/787.5e141d9e.chunk.js": "/to-do-app-prod/static/js/787.5e141d9e.chunk.js",
     "static/media/bg-desktop-light.jpg": "/to-do-app-prod/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
     "static/media/bg-desktop-dark.jpg": "/to-do-app-prod/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
@@ -11,11 +11,11 @@
     "static/media/icon-cross.svg": "/to-do-app-prod/static/media/icon-cross.6ee81d30b75cab19d6f7314624fcc4d6.svg",
     "static/media/icon-check.svg": "/to-do-app-prod/static/media/icon-check.a8fb15d0278c8e312df5.svg",
     "main.88121894.css.map": "/to-do-app-prod/static/css/main.88121894.css.map",
-    "main.a138570e.js.map": "/to-do-app-prod/static/js/main.a138570e.js.map",
+    "main.da5c79f5.js.map": "/to-do-app-prod/static/js/main.da5c79f5.js.map",
     "787.5e141d9e.chunk.js.map": "/to-do-app-prod/static/js/787.5e141d9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88121894.css",
-    "static/js/main.a138570e.js"
+    "static/js/main.da5c79f5.js"
   ]
 }
