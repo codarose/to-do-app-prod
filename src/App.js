@@ -96,7 +96,7 @@ const App = () => {
   return (
     <>
       <div className={`${theme}`}>
-        <div className={`app-container`}>
+        <div className={`app-container`} onTouchMove={handleTouchMove}>
           <header className="app-header">
             <h1 className="todo-heading">TODO</h1>
             {theme === "dark" ? (
