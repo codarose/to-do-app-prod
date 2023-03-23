@@ -32,9 +32,10 @@ const App = () => {
     }
   };
   const [showActivities, setShowActivities] = useState("All");
- 
 
-
+  function handleTouchMove(event) {
+    event.preventDefault();
+  }
 
   const handleIsComplete = (index) => {
     if (index >= 0 && index < activityList.length) {
@@ -145,6 +146,7 @@ const App = () => {
                   .map((item, index) => (
                     <div
                       className={`activity-list-${theme}`}
+                      onTouchMove={handleTouchMove}
                       onDragStart={(e) => dragActivityStart(e, index)}
                       onDragEnter={(e) => dragActivityEnter(e, index)}
                       onDragEnd={drop}
@@ -153,7 +155,6 @@ const App = () => {
                       onTouchEnd={drop}
                       key={index}
                       draggable
-                      
                     >
                       {item.isActive === true ? (
                         <div className="activity-item">
