@@ -32,14 +32,9 @@ const App = () => {
     }
   };
   const [showActivities, setShowActivities] = useState("All");
-  // const handleIsCompleted = (index) => {
-  //   const currentIndex = completedIndices.indexOf(index);
-  //   if (currentIndex === -1) {
-  //     setCompletedIndices([...completedIndices, index]);
-  //   } else {
-  //     setCompletedIndices(completedIndices.filter((i) => i !== index));
-  //   }
-  // };
+ 
+
+
 
   const handleIsComplete = (index) => {
     if (index >= 0 && index < activityList.length) {
@@ -153,8 +148,12 @@ const App = () => {
                       onDragStart={(e) => dragActivityStart(e, index)}
                       onDragEnter={(e) => dragActivityEnter(e, index)}
                       onDragEnd={drop}
+                      onTouchStart={(e) => dragActivityStart(e, index)}
+                      onTouchEnter={(e) => dragActivityEnter(e, index)}
+                      onTouchEnd={drop}
                       key={index}
                       draggable
+                      
                     >
                       {item.isActive === true ? (
                         <div className="activity-item">
