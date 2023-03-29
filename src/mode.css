@@ -47,6 +47,7 @@ button {
 /* Light Theme */
 /* Background */
 .light {
+  background-color: white;
   background-image: url("images/bg-desktop-light.jpg");
 }
 .app-header {
@@ -66,7 +67,8 @@ button {
   align-items: center;
 }
 
-.mode-button {
+.mode-button,
+.mode-button:hover {
   background: transparent;
   border: none;
 }
